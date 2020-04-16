@@ -1,3 +1,29 @@
+这是一个源repo在Windows下部署完成后的打包。
+
+折腾了一个下午加半个晚上，踩了不少坑，就传一个自用吧。
+
+# 使用方法：
+
+1. 克隆本仓库。
+
+2. 将`python36.7z`，解压于仓库根目录。
+
+3. 将`python36`文件夹目录添加至PATH环境变量。
+
+4. 在当前目录打开终端，输入`python36 app.py 8080`.
+
+5. 访问`127.0.0.1:8080/ocr`.
+
+# 部署过程中的参考
+
+- 故障排除：[GitHub开源：17M超轻量级中文OCR模型、支持NCNN推理-[不脱发的程序猿]](https://blog.csdn.net/m0_38106923/article/details/104911581)
+- `pse.pyd`来源：[Python构建快速高效的中文文字识别OCR-[XerCis]](https://blog.csdn.net/lly1122334/article/details/104752851)
+
+ps: Python 3.8.2与web.py会不兼容。原po编译的`pse.pyd`在Python 3.6下测试通过，在Python 3.8下不可用。
+
+**以下为源 repo README.md**
+
+---
 ## 本项目基于[chineseocr](https://github.com/chineseocr/chineseocr) 与[psenet](https://github.com/WenmuZhou/PSENet.pytorch)  实现中文自然场景文字检测及识别
 
 # 环境
