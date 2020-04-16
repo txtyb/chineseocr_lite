@@ -7,8 +7,6 @@ opencv-contrib-python
 Cython
 pillow
 h5py
-lmdb
-mahotas
 pandas
 requests
 web.py==0.40.dev0

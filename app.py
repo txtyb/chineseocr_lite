@@ -10,6 +10,8 @@ import numpy as np
 import uuid
 from PIL import Image
 from model import  text_predict,crnn_handle
+from web.template import ALLOWED_AST_NODES
+ALLOWED_AST_NODES.append('Constant')
 
 web.config.debug  = True
 
